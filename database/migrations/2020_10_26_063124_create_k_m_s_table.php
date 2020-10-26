@@ -15,6 +15,8 @@ class CreateKMSTable extends Migration
     {
         Schema::create('kms', function (Blueprint $table) {
             $table->id();
+            $table->string("name")->nullable();
+            $table->date("date");
             $table->timestamps();
         });
     }
